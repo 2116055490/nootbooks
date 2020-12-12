@@ -1,0 +1,225 @@
+<html>
+
+    <head>
+
+        <style>
+
+                .clearfix::after{
+                    color:red;
+                    display: inline-block;
+                    clear: both;
+                    overflow: hidden;
+                    height:0px;
+                    /* 基础样式 end */
+                    /* 顶部样式 start */
+                }
+
+                header{
+                    background-color: #333333;
+                    position: fixed;
+                    /* 固定定位 */
+                    top: 0px;
+                    /* 固定顶部 */
+                    width: 100%;
+                    z-index: 10000;
+                    /* 层叠中最上层 */
+                    min-width: 1170px;
+                }
+
+                    header .wrap{
+                    max-width: 1170px;
+                    margin: 0 auto;
+                    /* 水平居中 */
+                }
+
+                header .logo{
+                    float: left;
+                    height: 35px;
+                    width: 130px;
+                    background: url("images/logo.png") no-repeat #d43d3d center;
+                    /* logo 背景图片 背景色 图片居中对齐 */
+                    background-size: 87px 21px;
+                    /* 背景图片大小 */
+                }
+
+                header li{
+                    float: left;
+                    margin-left: 20px;
+                }
+
+                header a{
+                    font-size: 14px;
+                    color: #fff;
+                    height: 35px;
+                    line-height: 35px;
+                    display: inline-block;
+                    /* 行级块元素 */
+                }
+
+                header li a:hover{
+                    color: #d92f29;
+                }
+
+                header li.more{
+                    position: relative;
+                    padding-right: 12px;
+                }
+
+                /* 伪类添加更多向下箭头图片 */
+                header .more::after{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    width: 12px;
+                    height: 5px;
+                    background: url("images/down_arrow.png")no-repeat center center;
+                }
+                /* 单独处理鼠标经过时字体的颜色 及更换背景图片 */
+
+                header .more:hover a{
+                    color: #d92f29;
+                }
+
+                header .more:hover::after{
+                    background: url("images/down_red_arrow.png") no-repeat center center;
+                }
+
+                header .register{
+                    float: right;
+                    line-height: 35px;
+                    height: 35px;
+                }
+
+                header.register a{
+                    margin-left: 18px;
+                    font-size: 12px;
+                }
+
+                header .register  a:hover{
+                    text-decoration: underline;
+                }
+
+                header .register .version{
+                    background: url("images/version.png") no-repeat;
+                    background-size: cover;
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    /* 鼠标移动到该元素上的样式 */
+                    top: 2px;
+                    margin-left: 16px;
+                    width: 14px;
+                    margin-right: 36px;
+                    height: 13px; 
+                }
+                /* 顶部样式 end */
+
+                .wrap{
+                    width: 1170px;
+                    margin: 0 auto;
+                    /* 水平居中 */
+                }
+
+                .body{
+                    padding-top: 35px;
+                    /* 向下移动导航栏菜单高度 */
+                }
+
+                .card_list{
+                    width: 408px;
+                    position: fixed;
+                    top: 35px;
+                    height: calc(100% - 35px);
+                    overflow-y: scroll;
+                    z-index: 2;
+                }
+
+                .right_container{
+                    margin-left: 460px;
+                    width: 710px;
+                    padding-top: 20px;
+                }
+                
+                        </style>
+        </head>
+
+        <body>
+        <header>
+
+        <div class="wrap clearfix">
+
+            <div class="logo" href="#"></div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="https://www.360kuai.com/">首页</a></li>
+                    <li><a href="https://www.360kuai.com/">新时代</a></li>
+                    <li><a href="https://www.360kuai.com/">辟谣</a></li>
+                    <li><a href="https://www.360kuai.com/">图片</a></li>
+                    <li><a href="">汽车</a></li>
+                    <li><a href="">房产</a></li>
+                    <li><a href="">科技</a></li>
+                    <li><a href="">财经</a></li>
+                    <li><a href="">体育</a></li>
+                    <li><a href="">旅游</a></li>
+                    <li class="more"><a href="https://www.360kuai.com/">更多</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="register">
+                <a href="login.html">登录
+                </a> <a href="register.html" target="_blank">注册
+                </a> <span class="version"></span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <div class="body wrap">
+        <section class="card_list">
+            <article class="card_item">
+                <h1 class="card_title">
+                    <a href="https:www.360kuai.com/">
+                        看完奥巴马见日本天皇，再看特朗普见日本天皇，
+                        他们真的不一样！
+                    </a>
+                </h1>
+
+                <div class="card_img">
+                    <a href="https://www.360kuai.com/"><img src="images/pic3.jpg" alt=""></a>
+                    <a href="https://www.360kuai.com/"><img src="images/pic2.jpg" alt=""></a>
+                    <a href="https://www.360kuai.com/"><img src="images/pic4.jpg" alt=""></a>
+                </div>
+
+                <p class="card_meate">
+                    <span class="card_info-tag">国际
+
+                    </span>
+                    <span class="card_info-comment">
+                        <a href="https://www.360kuai.com/">
+                        3评论
+                        </a>
+                    </span>
+                    <time class="card_info-tiame">13分钟前</time>
+                </p>
+
+            </article>
+        </section>
+
+        <section class="right_container"></section>
+
+    </div>
+    </body>
+
+</html>
